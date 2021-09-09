@@ -234,7 +234,7 @@ $('.project-op').on('mouseenter', function(){
 // skew function 
 const section = document.getElementsByClassName('skew-container')[0];
 let currentPos = window.pageYOffset;
-const skewAmount = 0.018;
+const skewAmount = 0.015;
 
 const looper = function() {
   const newPos = window.pageYOffset;
