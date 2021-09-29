@@ -19,7 +19,7 @@ workSectionAnimation
 
 // initialize timeline
 var projectOne = new TimelineMax({paused: true});
-var projectTwo = new TimelineMax({paused: true});
+// var projectTwo = new TimelineMax({paused: true});
 var projectThree = new TimelineMax({paused: true});
 var projectSix = new TimelineMax({ paused: true});
 var projectSeven = new TimelineMax({ paused: true});
@@ -35,10 +35,10 @@ var titleOne = oneTitleWrapper.find('.top-item')
 var titleOneMiddle = oneTitleWrapper.find('.middle-item')
 var titleOneMiddleTop = oneTitleWrapper.find('.middle-top-item')
 
-var twoTitleWrapper = $('.project-two')
-var titleTwo = twoTitleWrapper.find('.top-item')
-var titleTwoMiddle = twoTitleWrapper.find('.middle-item')
-var titleTwoMiddleTop = twoTitleWrapper.find('.middle-top-item')
+// var twoTitleWrapper = $('.project-two')
+// var titleTwo = twoTitleWrapper.find('.top-item')
+// var titleTwoMiddle = twoTitleWrapper.find('.middle-item')
+// var titleTwoMiddleTop = twoTitleWrapper.find('.middle-top-item')
 
 var threeTitleWrapper = $('.project-three')
 var titleThree = threeTitleWrapper.find('.top-item')
@@ -88,10 +88,10 @@ projectOne
   .to(titleOneMiddleTop, 0.3, { x:10, y:-10, ease: Power1.easeOut}, "-=.2")
   .to(titleOneMiddle, 0.3, { x:5, y:-5, ease: Power1.easeOut}, "-=.1")
 
-projectTwo
-.to(titleTwo, 0.3, {x:15, y: -15, ease: Power1.easeOut}, 0)
-.to(titleTwoMiddleTop, 0.3, { x:10, y:-10, ease: Power1.easeOut}, "-=.2")
-.to(titleTwoMiddle, 0.3, { x:5, y:-5, ease: Power1.easeOut}, "-=.1")
+// projectTwo
+// .to(titleTwo, 0.3, {x:15, y: -15, ease: Power1.easeOut}, 0)
+// .to(titleTwoMiddleTop, 0.3, { x:10, y:-10, ease: Power1.easeOut}, "-=.2")
+// .to(titleTwoMiddle, 0.3, { x:5, y:-5, ease: Power1.easeOut}, "-=.1")
 
 projectThree
 .to(titleThree, 0.3, {x:15, y: -15, ease: Power1.easeOut}, 0)
@@ -146,13 +146,13 @@ $('.project-one').on('mouseenter', function(){
   window.location.replace('case-study-pages/hangar-mn.html')
 })
 
-$('.project-two').on('mouseenter', function(){
-  projectTwo.play();
-}).on('mouseleave', function(){
-  projectTwo.reverse();
-}).on('click', function(){
-  window.location.replace('case-study-pages/brewers-brew-kit.html');
-})
+// $('.project-two').on('mouseenter', function(){
+//   projectTwo.play();
+// }).on('mouseleave', function(){
+//   projectTwo.reverse();
+// }).on('click', function(){
+//   window.location.replace('case-study-pages/brewers-brew-kit.html');
+// })
 
 $('.project-three').on('mouseenter', function(){
   projectThree.play();

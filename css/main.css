@@ -525,6 +525,7 @@ h6 {
 }
 .inactive-item {
     opacity: .2;
+    margin:0;
 }
 .inactive-item:hover {
     cursor: not-allowed;
